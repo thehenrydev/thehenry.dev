@@ -1,0 +1,46 @@
+name: Feature Request
+description: File a feature request.
+title: "[BUG]: "
+labels: ["enhancement"]
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file this feature request. We really appreciate it.
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we require more information?
+      placeholder: ex. henry@thehenry.dev
+    validations:
+      required: false
+  - type: textarea
+    id: what-added
+    attributes:
+      label: What do you want added?
+      description: What do you want added to the website?
+      placeholder: Tell us what you want!
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why should we add this feature to the website?
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/thehenrydev/thehenry.dev/.github/CODE_OF_CONDUCT.md).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Upload screenshots
+      description: If applicable, please upload screenshots to help explain your feature.
+    validations:
+      required: false
