@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Grid Status",
-  description: "A free, automatic open source Formula 1 profile status updater",
+  title: "Henry Christie",
+  description: "An aspiring full-stack developer that's also British",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
